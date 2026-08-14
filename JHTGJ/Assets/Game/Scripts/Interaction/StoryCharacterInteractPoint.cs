@@ -5,10 +5,6 @@ using UnityEngine;
 
 namespace JHTGJ.Interaction
 {
-    /// <summary>
-    /// Story character that appears in-scene during configured phases.
-    /// Player stands nearby and presses interact to start dialogue.
-    /// </summary>
     [ExecuteAlways]
     public class StoryCharacterInteractPoint : MonoBehaviour
     {

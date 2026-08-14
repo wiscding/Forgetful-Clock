@@ -2,9 +2,6 @@ using UnityEngine;
 
 namespace JHTGJ.Art
 {
-    /// <summary>
-    /// Side-view whitebox block. Scale defines size; color distinguishes object type.
-    /// </summary>
     [ExecuteAlways]
     [RequireComponent(typeof(SpriteRenderer))]
     public class WhiteboxBlock : MonoBehaviour

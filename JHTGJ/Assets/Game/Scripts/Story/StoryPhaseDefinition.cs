@@ -11,18 +11,14 @@ namespace JHTGJ.Story
         [SerializeField] StoryPhaseType phaseType = StoryPhaseType.Morning;
         [SerializeField] List<StoryEventDefinition> events = new List<StoryEventDefinition>();
 
-        [Header("按按钮阶段（可选）")]
-        [Tooltip("Phase Type 为「按按钮」时，作为选择面板标题。")]
+        [Header("按按钮阶段")]
         [SerializeField] string choicePrompt = "请选择";
 
-        [Header("阶段立绘（可选）")]
-        [Tooltip("留空则使用 DayStorySchedule 的默认立绘。")]
+        [Header("阶段立绘")]
         [SerializeField] Sprite phaseProtagonistPortrait;
-        [Tooltip("留空则使用 DayStorySchedule 的默认立绘。")]
         [SerializeField] Sprite phaseWifePortrait;
 
-        [Header("角色在场（可选）")]
-        [Tooltip("配置本阶段出现的可互动角色（如妻子）及其位置、形象。")]
+        [Header("角色在场")]
         [SerializeField] List<StoryPhaseCharacterPresence> characterPresences = new List<StoryPhaseCharacterPresence>();
 
         public string DisplayName => displayName;

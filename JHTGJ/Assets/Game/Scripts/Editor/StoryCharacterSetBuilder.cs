@@ -15,7 +15,7 @@ namespace JHTGJ.EditorTools
         const string ExtraCharacterSourcePath = "Assets/Game/Art/Fonts/汉字.txt";
         const string StorySourcePath = "Assets/Game/Art/Fonts/_StoryTextSource.txt";
         const string StorySchedulePath = DayStoryScheduleCreator.DefaultAssetPath;
-        // Include curly quotes (U+201C/U+201D) used in story dialogue, plus ω in emoticons.
+        // Curly quotes + ω used in story text.
         const string ExtraSymbols =
             "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz " +
             "x×▼，。！？：；、…—「」《》（）～·—~@#&*+=/\\|<>[]{}_^%$().:" +
@@ -169,7 +169,6 @@ namespace JHTGJ.EditorTools
                 }
                 catch
                 {
-                    // ignored
                 }
             }
 

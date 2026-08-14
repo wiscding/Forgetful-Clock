@@ -2,14 +2,9 @@ using UnityEngine;
 
 namespace JHTGJ.Scene
 {
-    /// <summary>
-    /// Empty marker placed in the scene. Room reads its X position as a walk boundary.
-    /// </summary>
     public class WalkBoundMarker : MonoBehaviour
     {
         [SerializeField] BoundSide side = BoundSide.Left;
-
-        public BoundSide Side => side;
 
         public enum BoundSide
         {

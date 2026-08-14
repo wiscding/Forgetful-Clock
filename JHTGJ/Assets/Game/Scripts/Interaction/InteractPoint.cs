@@ -1,14 +1,9 @@
 using JHTGJ.Art;
-using JHTGJ.Interaction;
 using JHTGJ.Scene;
 using UnityEngine;
 
 namespace JHTGJ.Interaction
 {
-    /// <summary>
-    /// Marks where the player stands to interact with a prop or door.
-    /// Yellow semi-transparent block in the scene; replace with UI prompt later.
-    /// </summary>
     [ExecuteAlways]
     public class InteractPoint : MonoBehaviour
     {

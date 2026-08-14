@@ -167,7 +167,7 @@ namespace JHTGJ.EditorTools
 
             AttachFallbackFont(rebuilt);
 
-            // Source Han only covers CJK; ASCII/symbols ($, ^, ×, ω…) must use fallback.
+            // Source Han covers CJK; ASCII/symbols use LiberationSans fallback.
             var primaryCharacters = FilterForSourceHan(characters);
             if (string.IsNullOrEmpty(primaryCharacters))
                 return (false, "字符表中没有可写入思源宋体的汉字。");
@@ -255,15 +255,12 @@ namespace JHTGJ.EditorTools
             if (code >= 0x3400 && code <= 0x4DBF)
                 return true;
 
-            // CJK Symbols and Punctuation (、。 「」 etc.)
             if (code >= 0x3000 && code <= 0x303F)
                 return true;
 
-            // Halfwidth and Fullwidth Forms (，！？ etc.)
             if (code >= 0xFF00 && code <= 0xFFEF)
                 return true;
 
-            // General punctuation used in dialogue (" " … —)
             if (code >= 0x2010 && code <= 0x2027)
                 return true;
 

@@ -17,7 +17,7 @@ namespace JHTGJ.Story
         [SerializeField] Sprite wifePortrait;
         [SerializeField] List<DialogueLine> lines = new List<DialogueLine>();
 
-        [Header("对话结束后（可选）")]
+        [Header("对话结束后")]
         [SerializeField] bool changeRoomBackgroundAfterDialogue;
         [SerializeField] Sprite roomBackgroundSprite;
         [SerializeField] bool useCurrentRoomForBackground = true;

@@ -5,9 +5,6 @@ using UnityEngine;
 
 namespace JHTGJ.Interaction
 {
-    /// <summary>
-    /// Press E nearby to open the room destination selection panel.
-    /// </summary>
     [ExecuteAlways]
     public class RoomSelectorInteractPoint : MonoBehaviour
     {

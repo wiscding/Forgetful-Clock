@@ -60,10 +60,7 @@ namespace JHTGJ.Interaction
 
             if (characterPoint != null)
             {
-                if (storyManager != null && storyManager.TryHandleInteraction(characterPoint))
-                    return;
-
-                Debug.Log($"[Interact] {characterPoint.Label} ({characterPoint.Kind})");
+                storyManager?.TryHandleInteraction(characterPoint);
                 return;
             }
 
@@ -76,10 +73,7 @@ namespace JHTGJ.Interaction
                 return;
             }
 
-            if (storyManager != null && storyManager.TryHandleInteraction(point))
-                return;
-
-            Debug.Log($"[Interact] {point.Label} ({point.Kind})");
+            storyManager?.TryHandleInteraction(point);
         }
 
         void RefreshInteractionPrompt()

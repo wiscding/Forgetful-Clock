@@ -3,10 +3,6 @@ using UnityEngine;
 
 namespace JHTGJ.Scene
 {
-    /// <summary>
-    /// Defines the horizontal walkable area of a side-view room.
-    /// Drag WalkBoundMarker children or set values manually in Inspector.
-    /// </summary>
     [ExecuteAlways]
     public class Room : MonoBehaviour
     {

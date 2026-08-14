@@ -3,9 +3,6 @@ using UnityEngine;
 
 namespace JHTGJ.Character
 {
-    /// <summary>
-    /// Side-view character with continuous horizontal movement inside the current room.
-    /// </summary>
     [ExecuteAlways]
     public class SideViewCharacterController : MonoBehaviour
     {
